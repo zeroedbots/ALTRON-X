@@ -38,7 +38,13 @@ async def vcraid(_, e: Message):
 
     if inp:
          lel = await e.reply_text("**🔄 Ƥɤøƈɘssɩɳʛ...**")
-         file_path = aud
+         file_name = get_file_name(aud)
+         file_path = await converter.convert(
+             (await message.reply_to_message.download(file_name))
+             if not path.isfile(path.join("downloads", file_name))
+             else file_name
+         )
+
          ACTV_CALLS = []
          for x in clientbot.pytgcalls.active_calls:
              ACTV_CALLS.append(int(x.chat_id))
