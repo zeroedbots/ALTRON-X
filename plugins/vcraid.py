@@ -39,15 +39,15 @@ async def vcraid(_, e: Message):
     if inp:
          lel = await e.reply_text("**🔄 Ƥɤøƈɘssɩɳʛ...**")
          audio = (
-         (e.reply_to_Message.audio or e.reply_to_Message.voice)
-         if e.reply_to_Message
+         (e.reply_to_message.audio or e.reply_to_message.voice)
+         if e.reply_to_message
          else None
          )
 
          if audio:
              file_name = get_file_name(audio)
              file_path = await converter.convert(
-                  (await e.reply_to_Message.download(file_name))
+                  (await e.reply_to_message.download(file_name))
                   if not path.isfile(path.join("downloads", file_name))
                   else file_name
              ) 
