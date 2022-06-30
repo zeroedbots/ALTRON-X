@@ -21,8 +21,8 @@ from pytgcalls.types.input_stream import InputAudioStream
 HNDLR = '/'
 
 aud_list = [
-    "./AltronUserbot/AUDIO1.ogg",
-    "./AltronUserbot/AUDIO2.ogg",
+    "./modules/AUDIO1.ogg",
+    "./modules/AUDIO2.ogg",
 ]
 
 
