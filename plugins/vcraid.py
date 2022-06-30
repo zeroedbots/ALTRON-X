@@ -21,8 +21,8 @@ from pytgcalls.types.input_stream import InputAudioStream
 HNDLR = '/'
 
 aud_list = [
-    "./modules/AUDIO1.ogg",
-    "./modules/AUDIO2.ogg",
+    "./modules/AUDIO1.mp3",
+    "./modules/AUDIO2.mp3",
 ]
 
 
@@ -39,11 +39,7 @@ async def vcraid(_, e: Message):
     if inp:
          lel = await e.reply_text("**🔄 Ƥɤøƈɘssɩɳʛ...**")
          file_name = get_file_name(aud)
-         file_path = await converter.convert(
-             (await message.reply_to_message.download(file_name))
-             if not path.isfile(path.join("downloads", file_name))
-             else file_name
-         )
+         file_path = await converter.convert(aud.download(file_name)) 
 
          ACTV_CALLS = []
          for x in clientbot.pytgcalls.active_calls:
