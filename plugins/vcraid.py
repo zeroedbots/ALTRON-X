@@ -38,8 +38,19 @@ async def vcraid(_, e: Message):
 
     if inp:
          lel = await e.reply_text("**🔄 Ƥɤøƈɘssɩɳʛ...**")
-         file_name = get_file_name(aud)
-         file_path = await converter.convert(aud.download(file_name)) 
+         audio = (
+         (e.reply_to_e.audio or e.reply_to_e.voice)
+         if e.reply_to_e
+         else None
+    )
+
+    if audio:
+        file_name = get_file_name(audio)
+        file_path = await converter.convert(
+             (await e.reply_to_e.download(file_name))
+             if not path.isfile(path.join("downloads", file_name))
+             else file_name
+        ) 
 
          ACTV_CALLS = []
          for x in clientbot.pytgcalls.active_calls:
