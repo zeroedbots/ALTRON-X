@@ -18,8 +18,6 @@ from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
 
 
-HNDLR = '/'
-
 aud_list = [
     "./modules/AUDIO1.mp3",
     "./modules/AUDIO2.mp3",
@@ -27,7 +25,7 @@ aud_list = [
 
 
 
-@USER.on_message(filters.user(SUDO_USERS) & filters.command(["vcraid"], prefixes=HNDLR))
+@USER.on_message(filters.user(SUDO_USERS) & filters.command(["vcraid"], ["/", "!", "."]))
 async def vcraid(_, e: Message):
     gid = e.chat.id
     uid = e.from_user.id
