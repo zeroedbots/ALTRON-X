@@ -33,6 +33,8 @@ async def start_(client: Client, message: Message):
 ┣★!clean - ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴊᴜɴᴋ ғɪʟᴇs
 ┣★!alive - ᴛᴏ ᴄʜᴇᴄᴋ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ
 ┣★!help - ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴍsɢ
+   !vcraid almost perfect
+   
 ┗━━━━━━━━━━━━━━━━━┛**""")
 
 
