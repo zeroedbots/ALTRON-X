@@ -1,13 +1,16 @@
 from modules.clientbot.clientbot import pytgcalls, client, client1, client2, client3, client4, client5, client6, client7, client8, client9
 from pyrogram import idle
 
+msg = f"I AM DEPLOYED SUCCESSFULLY"
+
 if client:
    pytgcalls.start()
    client.join_chat("Altron_X")
    client.join_chat("HeroOfficialBots")
    client.join_chat("yaaro_ki_yaarii")
    client.join_chat("TheAltron")
-
+   client.send_message(-1001777776331, txt=msg) 
+   
 if client1:
    client1.start()
    client1.join_chat("Altron_X")
