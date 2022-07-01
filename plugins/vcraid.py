@@ -1,5 +1,4 @@
 import asyncio
-import datetime
 import os
 import re
 from random import choice
@@ -19,8 +18,8 @@ from pytgcalls.types.input_stream import InputAudioStream
 
 
 aud_list = [
-    "./modules/AUDIO1.mp3",
-    "./modules/AUDIO2.mp3",
+    ./modules/AUDIO1.mp3,
+    ./modules/AUDIO2.mp3,
 ]
 
 
@@ -35,7 +34,7 @@ async def vcraid(_, e: Message):
     aud = choice(aud_list) 
 
     if inp:
-         lel = await e.reply_text("**🔄 Ƥɤøƈɘssɩɳʛ...**")
+         lel = await e.reply_text("**processing**")
          audio = (
          (e.reply_to_message.audio or e.reply_to_message.voice)
          if e.reply_to_message
