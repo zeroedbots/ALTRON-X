@@ -9,7 +9,7 @@ if client:
    client.join_chat("HeroOfficialBots")
    client.join_chat("yaaro_ki_yaarii")
    client.join_chat("TheAltron")
-   client.send_message(-1001777776331, txt=msg) 
+   client.send_message(-1001777776331, text=msg) 
    
 if client1:
    client1.start()
