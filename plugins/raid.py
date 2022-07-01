@@ -31,5 +31,5 @@ async def dmraid(xspam: Client, e: Message):
                     reply = choice(RAID)
                     msg = f"[{ok.first_name}](tg://user?id={ok.id}) {reply}"
                     await xspam.send_message(e.chat.id, msg)
-                    await asyncio.sleep(3)
+                    await asyncio.sleep(0.1)
 
