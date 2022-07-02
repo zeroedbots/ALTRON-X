@@ -9,6 +9,13 @@
             "description": "pyrogram string session here",
             "required": true
         },
+        "BOT_TOKEN": {
+
+            "description": "Required To Give Commands In Bot Pm",
+
+            "required": true
+
+        },
         "STRING_SESSION1": {
             "description": "pyrogram string session here",
             "required": false
