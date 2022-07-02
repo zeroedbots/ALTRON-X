@@ -1,8 +1,8 @@
 {
-    "name": "Altron X",
+    "name": " X",
     "logo": "https://te.legra.ph/file/0957630b8248e79400247.jpg",
     "description": "ᴀɴ ᴀᴅᴠᴀɴᴄᴇ ᴍᴜsɪᴄ ᴀɴᴅ sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʟᴛʀᴏɴ x.",
-    "keywords": ["Altron", "telegram"],
+    "keywords": ["Altron", "tm"],
     "stack": "container",
     "env": {
         "STRING_SESSION": {
